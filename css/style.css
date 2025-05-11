@@ -1,0 +1,341 @@
+* {
+    /* reset css*/
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Outfit, sans-serif;
+}
+
+a {
+    color: var(--white) !important;
+}
+
+ol,
+ul {
+    padding: 0 !important;
+    margin: 0;
+}
+
+:root {
+    --black: #0D0D0D;
+    --white: #FFFFFF;
+    --brown-dark: #4B2E1E;
+    --brown-medium: #8B5E3C;
+    --brown-bright: #D2B48C;
+}
+
+.container {
+    width: 100%;
+    min-width: 355px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    color: var(--white);
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2.subtitle {
+    color: var(--black);
+}
+
+h1.title:not(#mini-home1) {
+    color: var(--black);
+}
+
+#searchbar {
+    width: 30%;
+    min-width: 200px;
+    height: 45px;
+
+    padding: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+#searchbarlens img {
+    border-radius: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+#searchbarinput {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--brown-dark);
+    font-weight: 600;
+    z-index: 1;
+}
+
+.text-header {
+    color: var(--white);
+    padding: 18px 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.text-header img {
+    width: 10%;
+}
+
+.navall {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5%;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 50px;
+    scroll-margin-top: 80px;
+}
+
+#home {
+    min-height: 515px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 2rem 0 4rem;
+    background-color: var(--brown-dark);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font);
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    background-image: url("../imgs/home.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.mini-home {
+    width: 100%;
+    text-align: center;
+}
+
+#mini-home1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-wrap: wrap;
+    width: 90%;
+}
+
+#mini-home1 img {
+    width: 20%;
+    max-width: 80px;
+}
+
+#mini-home2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav {
+    height: 30px;
+    width: 100%;
+    background-color: var(--brown-medium);
+}
+
+
+#cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 320px;
+    max-width: 350px;
+    /* max-height: 440px; */
+    padding: 15px;
+    background-color: var(--white);
+}
+
+.card img {
+    min-height: 180px;
+    max-height: 210px;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.card figcaption {
+    margin-top: 15px;
+    height: 100%;
+}
+
+.card figcaption ul {
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.descricao {
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cardButtons {
+    display: flex;
+    gap: 2%;
+}
+
+.cardButton {
+    width: 100%;
+    border-radius: 8px;
+    padding: 1.5%;
+    background-color: var(--brown-dark);
+    color: var(--white);
+    flex: 3;
+}
+
+.fav {
+    flex: 1;
+}
+
+
+
+#servicos {
+    background-color: var(--brown-bright);
+}
+
+.servicos {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    padding: 20px;
+    padding-bottom: 30px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.servico {
+    flex: 1 1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+.servico img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.servico figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.division {
+    border: 2px solid var(--black);
+    width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+
+footer {
+    background-color: var(--brown-dark);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+}
+
+#footer {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    color: var(--white);
+}
+
+.footer-content {
+    margin: 20px;
+    flex: 1 1 300px;
+}
+
+#sobre {
+    flex: 2 2 300px;
+}
+
+#sobre p,
+#contato p {
+    font-size: 95%;
+}
+
+#contato {
+    flex: 1 1 200px;
+}
+
+
+.footer-content h2 {
+    text-align: left;
+    color: var(--white);
+}
+
+#direitos {
+    width: 100vw;
+    text-align: center;
+    background-color: var(--brown-medium);
+    color: var(--black);
+    padding: 5px 0;
+    margin: 0;
+}
