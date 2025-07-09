@@ -32,10 +32,12 @@ ul {
 .container {
     width: 100%;
     min-width: 355px;
-    max-width: 800px;
+    max-width: 1200px;
     height: 100%;
     margin: auto;
 }
+
+
 
 .title {
     color: var(--white);
@@ -94,7 +96,12 @@ header {
     top: 0;
     background-color: var(--brown-dark);
     font-weight: 600;
-    z-index: 1;
+    z-index: 1050;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 1;
 }
 
 .text-header {
@@ -110,23 +117,10 @@ header {
     width: 10%;
 }
 
-nav {
-    height: fit-content;
-    width: 100%;
-    padding: 4px;
-    background-color: var(--brown-medium);
-}
-
-.navall {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 5%;
-}
-
 section {
     min-height: 100vh;
     padding-top: 50px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px;
 }
 
 #home {
@@ -470,3 +464,10 @@ footer {
     background-image: url("../imgs/mosaico/foto5.jpg");
     grid-area: p6;
 }
+
+
+
+/* 
+.carousel-item img {
+    height: 94vh;
+} */
