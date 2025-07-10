@@ -101,7 +101,7 @@ header {
 
 .carousel-control-prev,
 .carousel-control-next {
-  z-index: 1;
+    z-index: 1;
 }
 
 .text-header {
@@ -466,8 +466,43 @@ footer {
 }
 
 
+#poggers{
+    height: 70vh;
+}
 
-/* 
-.carousel-item img {
-    height: 94vh;
-} */
+
+#block {
+  width: 100px;
+  height: 100px;
+  background-color: #00ffff;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  border-radius: 10px;
+  animation: move 8s infinite ease-in-out,
+             color 8s infinite linear,
+             rotate 8s infinite linear;
+}
+
+@keyframes move {
+  0%   { top: 0; left: 0; }
+  25%  { top: 0; left: 100%; }
+  50%  { top: 100%; left: 100%; }
+  75%  { top: 100%; left: 0; }
+  100% { top: 0; left: 0; }
+}
+
+@keyframes color {
+  0%   { background-color: #00ffff; }
+  25%  { background-color: #ff00ff; }
+  50%  { background-color: #ffff00; }
+  75%  { background-color: #ff5500; }
+  100% { background-color: #00ffff; }
+}
+
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
