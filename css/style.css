@@ -18,7 +18,6 @@ a {
 ol,
 ul {
     padding: 0;
-    /* margin: 0; */
 }
 
 :root {
@@ -104,7 +103,10 @@ header {
     width: 10%;
 }
 
-.nav-link, .navbar-brand, .nav-link:hover, .navbar-brand:hover {
+.nav-link,
+.navbar-brand,
+.nav-link:hover,
+.navbar-brand:hover {
     color: var(--white);
 }
 
@@ -338,13 +340,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
 #news-figure {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -391,12 +386,6 @@ footer {
     #news-figure img {
         order: -1;
     }
-}
-
-
-
-#mosaico {
-    min-height: 120vh;
 }
 
 #mosaico-content {
@@ -469,9 +458,6 @@ footer {
 }
 
 
-
-
-
 #block {
     width: 100px;
     height: 100px;
@@ -480,9 +466,7 @@ footer {
     top: 50px;
     left: 50px;
     border-radius: 10px;
-    animation: move 8s infinite ease-in-out,
-        color 8s infinite linear,
-        rotate 8s infinite linear;
+    animation: animation 8s infinite ease-in-out;
 }
 
 @media (width < 800px) {
@@ -493,61 +477,36 @@ footer {
     }
 }
 
-@keyframes move {
+@keyframes animation {
     0% {
         top: 20%;
         left: 10%;
-    }
-
-    25% {
-        top: 20%;
-        left: 80%;
-    }
-
-    50% {
-        top: 60%;
-        left: 80%;
-    }
-
-    75% {
-        top: 60%;
-        left: 10%;
-    }
-
-    100% {
-        top: 20%;
-        left: 10%;
-    }
-}
-
-@keyframes color {
-    0% {
         background-color: #00ffff;
+        transform: rotate(0deg);
     }
 
     25% {
+        top: 20%;
+        left: 80%;
         background-color: #ff00ff;
     }
 
     50% {
+        top: 60%;
+        left: 80%;
         background-color: #ffff00;
     }
 
     75% {
+        top: 60%;
+        left: 10%;
         background-color: #ff5500;
     }
 
     100% {
+        top: 20%;
+        left: 10%;
         background-color: #00ffff;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
         transform: rotate(360deg);
     }
 }
