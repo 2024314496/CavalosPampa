@@ -282,12 +282,10 @@ section {
     line-height: 1.5;
 }
 
-.division {
-    border: 2px solid var(--black);
-    width: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 1;
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
 }
 
 footer {
@@ -334,7 +332,7 @@ footer {
     width: 100vw;
     text-align: center;
     background-color: var(--brown-medium);
-    color: var(--black);
+    color: var(--white);
     padding: 5px 0;
     margin: 0;
 }
