@@ -133,6 +133,12 @@ section {
     font-weight: 600;
 }
 
+@media (width < 800px){
+    #home{
+        background-image: url('imgs/home3-cel.webp');
+    }
+}
+
 #home-content {
     display: flex;
     justify-content: center;
