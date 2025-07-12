@@ -72,17 +72,18 @@ header {
 }
 
 .btn-outline-brown {
-    color: #6c3e26;
-    border-color: #6c3e26;
+    color: white;
+    background-color: var(--brown-dark);
 }
 
 .btn-outline-brown:hover {
-    background-color: #6c3e26;
+    border: 1px solid var(--brown-dark);
+    background-color: none;
     color: white;
 }
 
 .form-control:focus {
-    border-color: #6c3e26;
+    border-color: var(--brown-dark);
     box-shadow: 0 0 0 0.25rem rgba(108, 62, 38, 0.25);
 }
 
@@ -434,12 +435,12 @@ footer {
 }
 
 #photo-1 {
-    background-image: url("../imgs/mosaico/foto1.jpg");
+    background-image: url("../imgs/mosaico/foto1.webp");
     grid-area: p1;
 }
 
 #photo-2 {
-    background-image: url("../imgs/mosaico/foto3.jpg");
+    background-image: url("../imgs/mosaico/foto3.webp");
     grid-area: p2;
 }
 
@@ -449,17 +450,17 @@ footer {
 }
 
 #photo-4 {
-    background-image: url("../imgs/mosaico/foto4.jpg");
+    background-image: url("../imgs/mosaico/foto4.webp");
     grid-area: p4;
 }
 
 #photo-5 {
-    background-image: url("../imgs/mosaico/foto6.jpg");
+    background-image: url("../imgs/mosaico/foto6.webp");
     grid-area: p5;
 }
 
 #photo-6 {
-    background-image: url("../imgs/mosaico/foto5.jpg");
+    background-image: url("../imgs/mosaico/foto5.webp");
     grid-area: p6;
 }
 
