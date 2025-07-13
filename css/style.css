@@ -171,11 +171,6 @@ section {
     font-weight: 500;
 }
 
-#catalogo {
-    padding-top: 150px;
-
-}
-
 #cards {
     display: flex;
     justify-content: center;
