@@ -87,7 +87,6 @@ header {
 
 .btn-outline-brown:hover {
     border: 1px solid var(--brown-dark);
-    background-color: none;
     color: white;
 }
 
