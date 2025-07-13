@@ -144,10 +144,7 @@ section {
 }
 
 #home {
-    min-height: 515px;
     margin: auto;
-    margin-top: 100px;
-    padding: 2rem 0 4rem;
     background-color: var(--brown-dark);
 
     display: flex;
@@ -171,8 +168,8 @@ section {
 
 #hero {
     position: absolute;
-    width: 100%;
-    height: 80%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
     z-index: 2;
@@ -217,13 +214,16 @@ section {
     padding: 15px;
     background-color: var(--white);
     z-index: 1;
-    transition: 1s ease-in-out;
+    transition-property: width, height, transform;  /*   transitionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .card:hover {
     z-index: 2;
-    transform: scale(1.05, 1.05);
+    transform: scale(1.05);
 }
+
 
 .card img {
     width: 100%;
