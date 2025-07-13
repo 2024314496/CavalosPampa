@@ -193,10 +193,10 @@ section {
     transition: 1s ease-in-out;
 }
 
-/* .card:hover {
+.card:hover {
     z-index: 2;
     transform: scale(1.05, 1.05);
-} */
+}
 
 .card img {
     width: 100%;
